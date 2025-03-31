@@ -14,22 +14,26 @@ function Explore() {
 
       <section className="explore-grid">
         <div className="explore-card">
-          <h3>Showcase Your Work</h3>
           <p>Upload your projects, share your skills, and attract opportunities.</p>
+          <button onClick={() => navigate("/upload")} className="btn showcase-btn">
+            Showcase Your Work
+          </button>
         </div>
         <div className="explore-card">
-          <h3>Collaborate with Others</h3>
-          <p>Join forces with fellow creators to build something amazing.</p>
+          <p>Join forces with fellow creators, work together, and bring ideas to life.</p>
+          <button onClick={() => navigate("/collaborate")} className="btn collaborate-btn">
+            Collaborate with Others
+          </button>
         </div>
         <div className="explore-card">
-          <h3>Monetize Your Talent</h3>
-          <p>Earn through sponsorships, sales, and exclusive content.</p>
+          <p>Turn your creativity into income through sponsorships</p>
+          <button onClick={() => navigate("/monetize")} className="btn monetize-btn">
+            Monetize Your Talent
+          </button>
         </div>
       </section>
 
-      <button className="explore-button" onClick={() => navigate("/")}>
-        Go Back to Home
-      </button>
+      <button className="explore-button" onClick={() => navigate("/")}>Go Back to Home</button>
     </div>
   );
 }

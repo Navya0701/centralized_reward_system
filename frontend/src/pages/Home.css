@@ -1,132 +1,148 @@
-/* Background Image */
-/* Background Image */
+/* Home Container */
 .home-container {
-    background: url("C:\Users\HP\Downloads\background.avif") no-repeat center center/cover;
+    background: url("C:\\Users\\HP\\Desktop\\mern\\creator-platform\\frontend\\public\\Screenshot 2025-03-14 173328.png") no-repeat center center/cover;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    color: white;
+    align-items: center;
     text-align: center;
+    background-color: #121212; /* Fallback in case image doesn’t load */
 }
 
-
-/* Navbar */
+/* Navbar Styles */
 .navbar {
-    position: absolute;
-    top: 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 50px;
-    background: rgba(0, 0, 0, 0.6);
+    padding: 10px 30px; /* Reduced padding for a slimmer navbar */
+    height: 50px; /* Fixed height */
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.15); /* Softer transparency */
+    border-radius: 10px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
 }
 
 /* Logo */
 .logo {
-    font-size: 24px;
+    font-size: 2.0rem; /* Slightly reduced font size */
     font-weight: bold;
-    color: #ffcc00;
+    color: #fff;
 }
 
-/* Navigation Links */
 .nav-links {
     list-style: none;
     display: flex;
+    gap: 20px;
+    flex: 1; /* Makes it take available space */
+    justify-content: center; /* Centers links */
+    text-align: center;
 }
-
-.nav-links li {
-    margin: 0 15px;
-}
-
-.nav-links a {
+.nav-links li a {
     text-decoration: none;
     color: white;
-    font-size: 18px;
-    transition: color 0.3s;
+    font-size: 1.6rem; /* Reduced font size */
+    transition: 0.3s;
 }
 
-.nav-links a:hover {
-    color: #ffcc00;
+/* Hover Effect */
+.nav-links li a:hover {
+    color: #ffeb3b;
+    text-shadow: 0px 0px 10px #ffeb3b;
+    transform: scale(1.1);
 }
 
-/* Auth Buttons (Top Right) */
+/* Auth Buttons */
 .auth-buttons {
     display: flex;
-    align-items: center;
-    gap: 15px;
+    gap: 10px;
 }
 
-.auth-buttons .login-btn,
+/* Login & Signup Buttons */
+.auth-buttons .login-btn, 
 .auth-buttons .signup-btn {
-    padding: 10px 20px;
-    border-radius: 6px;
-    font-size: 16px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background 0.3s, color 0.3s;
-}
-
-/* Login Button */
-.auth-buttons .login-btn {
-    background: transparent;
-    color: white;
-    border: 2px solid white;
-}
-
-.auth-buttons .login-btn:hover {
     background: white;
     color: black;
+    border: 2px solid white;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-/* Sign-up Button */
-.auth-buttons .signup-btn {
-    background: #ffcc00;
-    color: black;
-    border: none;
-}
-
+/* Hover Effect */
+.auth-buttons .login-btn:hover, 
 .auth-buttons .signup-btn:hover {
-    background: #e6b800;
+    background: black;
+    color: white;
+    border: 2px solid black;
+}
+
+/* Profile Icon */
+.profile-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.profile-icon {
+    width: 35px; /* Reduced width */
+    height: 35px; /* Reduced height */
+    border-radius: 50%;
+    object-fit: scale-down;
 }
 
 /* Hero Section */
 .hero {
-    margin-top: 120px;
-    max-width: 650px;
+    text-align: center;
+    color: white;
+    padding: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 900px;
 }
 
 .hero h1 {
     font-size: 3rem;
     font-weight: bold;
-    margin-bottom: 15px;
 }
 
 .hero p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-    opacity: 0.9;
+    font-size: 1.5rem;
+    margin-top: 10px;
 }
 
-/* CTA (Email & Button) */
-.cta {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 15px 20px;
+        text-align: center;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
 
-.cta input {
-    padding: 12px;
-    width: 280px;
-    border-radius: 6px;
-    border: none;
-    font-size: 16px;
-}
+    .auth-buttons {
+        flex-direction: column;
+    }
 
-.cta .signup-btn {
-    padding: 12px 20px;
-    font-size: 16px;
-    font-weight: bold;
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
 }
