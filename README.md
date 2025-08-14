@@ -50,7 +50,8 @@ Support interoperability with multiple blockchains.
 
 ![WhatsApp Image 2025-08-14 at 10 55 23_c866de42](https://github.com/user-attachments/assets/2bce05c0-2a8e-41ba-804a-adbce7c05065)
 
-#Team details:
+**#Team 32 (Blockers) details:**
+
 
 22501A0518-->Bandapu Bhuvaneswara Rao
 
