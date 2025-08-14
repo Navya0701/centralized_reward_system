@@ -1,4 +1,5 @@
 ⭐ Centralized Reward System
+
 📜 Project Description
 
 Centralized Reward System is a blockchain-powered platform built on the Aptos Move framework that consolidates rewards from multiple apps (e-commerce, travel, food delivery, etc.) into a single unified wallet. This system allows users to combine smaller, scattered rewards into one spendable balance, enabling them to make large, high-value purchases without wasting reward points.
@@ -34,3 +35,5 @@ Launch NFT-based premium loyalty memberships.
 Support interoperability with multiple blockchains.
 
 📷 Screenshot
+<img width="1282" height="763" alt="Screenshot 2025-08-14 092445" src="https://github.com/user-attachments/assets/341bf86c-d5a1-4bbf-bd13-4005c1c17bdb" />
+
